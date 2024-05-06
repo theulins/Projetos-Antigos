@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Roboto+Condensed&family=Source+Code+Pro&display=swap');
+
+.endereco {
+    font-family: 'Roboto', sans-serif;
+    color: dimgrey;
+}
+
+.contato {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(197, 21, 109);
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(30, 30, 30);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+hr {
+    border-top: 5px solid rgb(30, 30, 30);
+    margin: 0;
+
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(30, 30, 30, 0.75);
+    font-weight: 300;
+}
+p{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    color: rgb(30, 30, 30, 0.8);
+
+}
+h3{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    color: rgb(197, 21, 109);
+
+}

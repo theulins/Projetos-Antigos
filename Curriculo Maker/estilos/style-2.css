@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    padding-top: 1vh;
+    background-image: url("/midia/background-img.png");
+    background-size: cover;
+    background: linear-gradient(-0.2turn, rgb(255, 0, 100), rgb(100, 0, 255));
+}
+
+.conteudo {
+    padding: 2%;
+}
+
+.conteudo h1 {
+    font-weight: 700;
+    font-size: 5vh;
+    color: aliceblue;
+    text-align: center;
+
+}
+
+.dados {
+    margin-top: 3%;
+    background-color: aliceblue;
+    height: 70vh;
+    border-radius: 50px;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+.dados ul {
+    padding: 3% 5%;
+
+}
+
+.dados ul p {
+    margin-top: 2%;
+}
+
+#mais {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
