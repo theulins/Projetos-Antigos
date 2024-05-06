@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matheus Lins e Igor Torres">
+    <title>Atividade de CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Atividade de permuta</h1>
+        <p>Atividade sobre seletores em Css. <br>
+            Aluno: <br>
+            Matheus Lins Fernandes <br>
+        </p>
+        <hr>
+    </header>
+    <div class="indice">
+        <ul class="linkneutro">
+            <li>
+                <a href="#id"><strong>Seletores</strong></a>
+            </li>
+            <li>
+                <a href="#id">Id</a>
+            </li>
+            <li>
+                <a href="#classe">classe</a>
+            </li>
+            <li>
+                <a href="#tag">Tag</a>
+            </li>
+            <li>
+                <a href="#combinado">Combinado</a>
+            </li>
+            <li>
+                <a href="#filho">Filho</a>
+            </li>
+            <li>
+                <a href="#adjacente">Adjecente</a>
+            </li>
+            <li>
+                <a href="#titulo">Título</a>
+            </li>
+            <li>
+                <a href="#universal">Universal</a>
+            </li>
+            <li>
+                <a href="#atributo">Atributo</a>
+            </li>
+            <li>
+                <a href="#first-child"><strong>Pseudo-classes e Pseudo-elementos</strong></a>
+            </li>
+            <li>
+                <a href="#first-child">:first-child</a>
+            </li>
+            <li>
+                <a href="#link e visited">Link e visited</a>
+            </li>
+            <li>
+                <a href="#hover"><strong>Pseudo-classes Dinâmicas</strong></a>
+            </li>
+            <li>
+                <a href="#hover">:hover</a>
+            </li>
+            <li>
+                <a href="#active">:active</a>
+            </li>
+            <li>
+                <a href="#focus">:focus</a>
+            </li>
+            <li>
+                <a href="#first-line">::first-line</a>
+            </li>
+            <li>
+                <a href="#first-letter">::first-letter</a>
+            </li>
+            <li>
+                <a href="#cascataimportant"><strong>Efeito cascata e !important</strong></a>
+            </li>
+        </ul>
+    </div>
+    <div class="seletores">
+        <h1 style="font-size: xx-large; background-color: rgba(112, 128, 144, 0.500) ;">Seletores</h1>
+        <div id="id">
+            <h1>Id</h1>
+            <span>Html: &lt;p id="textoazul"></span><br>
+            <span>Css: #textoazul{color: blue;}</span>
+            <p id="textoazul">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa molestias iusto commodi
+                earum
+                autem
+                alias et illum
+                doloremque quam, magni totam expedita, ratione facere! Deleniti laboriosam expedita ratione. Autem,
+                doloribus.
+            </p>
+        </div>
+        <div id="classe">
+            <h1>Classes</h1>
+            <span>Html: &lt;p class="textovermelho"></span><br>
+            <span>Css: .textovermelho {color: red;}</span>
+            <p class="textovermelho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque reiciendis pariatur
+                voluptate. Nesciunt, laborum.
+                Ad totam officiis repellendus, harum tempora facilis, consectetur vero perferendis dolorem aperiam
+                provident
+                commodi minus sint!</p>
+        </div>
+        <div id="tag">
+            <h1>Tag</h1>
+            <span>Html: &lt;p></span><br>
+            <span>Css: p {color: blue;}</span>
+            <p style="color: steelblue;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iste magni porro
+                nemo
+                aliquid vitae eos,
+                officia,
+                provident perspiciatis omnis nam deserunt voluptatibus quas, dolore culpa facilis et. Nisi, amet?</p>
+        </div>
+        <div id="combinado">
+            <h1>Combinados</h1>
+            <span>Html: <br> &lt;ul> <br>
+                &lt;li>Exemplo&lt;/li> <br>
+                &lt;li>Exemplo&lt;/li> <br>
+                &lt;li>Exemplo&lt;/li> <br>
+                &lt;/ul></span><br>
+            <span>Css: ul li {color: red;}</span>
+            <ul>
+                <li>Exemplo</li>
+                <li>Exemplo</li>
+                <li>Exemplo</li>
+            </ul>
+        </div>
+        <div id="filho">
+            <h1>Seletor filho</h1>
+            <span>Html: <br>
+                &lt;div> <br>
+                &lt;p>Lorem...&lt;/p> <br>
+                &lt;/div></span><br>
+            <span>Css: div>p {color: blue;}</span>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, repellendus sint! Obcaecati voluptas
+                    esse
+                    similique repudiandae ipsa dignissimos odio, illum, recusandae delectus possimus sapiente
+                    accusantium
+                    dicta
+                    officiis enim atque quo?</p>
+            </div>
+        </div>
+        <div id="adjacente">
+            <h1>Irmão adjacente</h1>
+            <span>Html: <br>
+                &lt;p>Lorem...&lt;/p> <br>
+                &lt;p>Lorem...&lt;/p> <br>
+            </span>
+            <span>Css:p+p {color: red;}</span>
+            <p style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi enim sequi id
+                asperiores,
+                aliquid facere
+                adipisci
+                minus illum eos earum illo maxime nihil sapiente debitis quam. Fugit quia tempora distinctio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi enim sequi id asperiores, aliquid facere
+                adipisci
+                minus illum eos earum illo maxime nihil sapiente debitis quam. Fugit quia tempora distinctio?</p>
+        </div>
+        <div id="titulo">
+            <h1>Título </h1>
+            <span>Html: &lt;p title="titulo">Lorem... <br>
+            </span><br>
+            <span>Css:p[title=titulo] {color: blue;}</span>
+            <p title="titulo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro incidunt voluptatibus
+                aspernatur
+                ipsam minima
+                reprehenderit, ut vero a soluta perferendis aliquam distinctio quis cupiditate natus repellendus
+                laboriosam
+                ullam accusamus impedit!</p>
+        </div>
+        <div id="universal">
+            <h1>Seletor universal</h1>
+            <span>Css: *{color: red;}</span>
+            <p>Atribui a todos elementos essa característica.</p>
+        </div>
+        <div id="atributo">
+            <h1>Seletor de atributo</h1>
+            <p>Alguns dos tipos são:</p>
+            <p>
+            <ul>
+                <li>[attr] Se refere a uma atribuição. </li>
+                <li>[attr=value] Se refere a uma atribuição com o valor "value".</li>
+                <li>[attr*=value] Se refere a uma atribuição que tenha "value" em algum lugar.</li>
+                <li>[attr^=value] Se refere a uma atribuição que tenha o seu value precedido por "value".</li>
+            </ul>
+            </p>
+            <span>
+                Exemplo: <br> <br>
+                HTML <br>
+                &lt;a href="http://example.com"><a href="http://example.com">Texto com exemplo</a>&lt;/a> <br>
+                <br>
+                CSS <br>
+                a[href*="example"] { color: tomato;}
+            </span>
+
+        </div>
+    </div>
+    <hr>
+    <div class="pseudo-classes e pseudo-elementos">
+        <h1 style="font-size: xx-large; background-color: rgba(112, 128, 144, 0.500);">Pseudo-classes e Pseudo-elementos
+        </h1>
+        <div id="first-child">
+            <h1>:first-child</h1>
+            <strong>Esta pseudo-classe casa com o elemento que é o primeiro filho de um outro elemento. <br>
+                A regra a seguir casa com o primeiro elemento parágrafo p na div com classe article:</strong>
+            <div class="article">
+                <p>Primeiro paragrafo</p>
+                <p>Segundo paragrafo</p>
+            </div>
+            <span>CSS <br>
+                div.article p:first-child {font-style:italic;}</span>
+        </div>
+        <div id="link e visited">
+            <h1>:link e :visited</h1>
+            <p><strong>Essas pseudo-classes se referem ao acesso da página, o primeiro é um link comum e o segundo
+                    mostra se o link ja foi visitado, tendo sua cor alterada. <br>
+                    Apenas um pode ser usado simultaneamente.</strong></p>
+            <a href="#link e visited" id="link-id">naovisitado</a> <br>
+            <a href="#link e visited" id="visited-id">visitado</a> <br> <br>
+            <span>
+                CSS <br>
+                a {color: green;} <br>
+                a:visited {color: tomato;}</span>
+        </div>
+    </div>
+    <div class="pseudo-classes">
+        <h1 style="font-size: xx-large; background-color: rgba(112, 128, 144, 0.500);">Pseudo-classes Dinâmicas</h1>
+        <div id="hover">
+            <h1>:hover</h1>
+            <p><strong>É comumente utilizado para destacar o local em que o ponteiro esta localizado sobre, mesmo sem
+                    clicar.</strong></p>
+            <button class="botao">Botão de exemplo</button> <br> <br>
+            <span>CSS <br>
+                .botao:hover { <br>
+                color: black;<br>
+                background-color: white; <br>
+                } <br>
+            </span>
+        </div>
+        <div id="active">
+            <h1>:active</h1>
+            <p><strong>Assim como o hover ele também destaca a coisa, mas agora com a necessidade de clicar.</strong>
+            </p>
+            <button class="botao2">Botão de exemplo</button> <br> <br>
+            <span>CSS <br>
+                .botao2:active { <br>
+                color: black;<br>
+                background-color: white; <br>
+                } <br>
+        </div>
+        <div id="focus">
+            <h1>:focus</h1>
+            <p><strong>Se refere a um elemento que aceita eventos do teclado.</strong></p>
+            <input type="text" class="textbar"> <br> <br>
+            <span>CSS <br>
+                .textbar:focus { <br>
+                color: rgb(39, 134, 125); <br>
+                font-weight: bold; <br>
+                } <br>
+            </span>
+        </div>
+        <div id="first-line">
+            <h1>::first-line</h1>
+            <p><strong>Afeta apenas a primeira linha do elemento.</strong></p>
+            <p class="firstline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam cum atque voluptas
+                mollitia ad veritatis <br>
+                sequi temporibus rem error numquam? Quo at minus atque quis et, nihil eveniet voluptas veritatis.</p>
+            <span>CSS <br>
+                .firstline::first-line {color: tomato;}</span>
+
+        </div>
+        <div id="first-letter">
+            <h1>::first-letter</h1>
+            <p><strong>Através dessa pseudo-classe é possivel se relacionar com a primeira letra de um elemento</strong>
+            </p>
+            <p class="fl">Texto de exemplo.</p>
+            <span>Css <br>
+                .fl::first-letter { <br>
+                color: tomato; <br>
+                font-size: 30px; <br>
+                font-weight: bold;<br>
+                font-style: italic;<br>
+                }
+            </span>
+        </div>
+        <div id="cascataimportant">
+            <h1 style="font-size: xx-large; background-color: rgba(112, 128, 144, 0.500);">Efeito cascata e !important
+            </h1>
+            <p><strong>Qual estilo será usado quando houver mais de um estilo especificado para um elemento
+                    HTML?<br><br>
+                    Estilo Inline<br><br>
+                    Estilo Incorporado ou o Estilo Externo, depende da ordem de declaração dentro da tag Head<br><br>
+                    Estilo padrão do navegador<br><br>
+                    Portanto, um estilo Inline (dentro de um atributo style de um elemento HTML específico) tem a
+                    prioridade mais alta,
+                    o que significa que ele substituirá um estilo definido dentro da tag &lt;style&gt;, ou em uma folha
+                    de estilos
+                    externa &lt;link&gt;, ou um valor padrão do navegador.</b></strong></p>
+
+            <strong>
+                Ainda, além do efeito cascata, temos a especificidade dos seletores CSS.<br>
+                Digamos que dois seletores CSS, definidos em uma folha de estilo externa, casem com o mesmo
+                elemento. Qual será renderizado?<br>
+                Em resumo, quanto maior o nível de detalhamento do seletor da regra CSS, maior a prioridade.<br>
+            </strong>
+            <hr>
+            <span>
+                HTML <br>
+                &lt;!DOCTYPE HTML&gt;<br>
+                &lt;html&gt;<br>
+                <ul>
+                    &lt;body&gt;<br>
+                    <ul>
+                        &lt;div id="conteudo"&gt;<br>
+                        &lt;p class="nivelc"&gt;Texto do primeiro parágrafo, blá...blá..&lt;/p&gt;<br>
+                        &lt;p&gt;Texto do segundo parágrafo, blá...blá...&lt;/p&gt;<br>
+                        &lt;/div&gt;<br>
+                        &lt;p&gt;Texto do terceiro parágrafo, blá...blá...&lt;/p&gt;<br>
+                    </ul>
+                    &lt;/body&gt;<br>
+                </ul>
+                &lt;/html&gt;<br>
+                <br>
+                CSS <br>
+                #conteudo p.nivelc {<br>
+                color: green;<br>
+                } <br>
+                <br>
+                #conteudo p {<br>
+                color: blue;<br>
+                font-size: 18px;<br>
+                } <br>
+                <br>
+                p {<br>
+                color: red;<br>
+                font-size: 26px;<br>
+                } <br>
+            </span>
+            <p><strong>Resultado:</strong></p>
+            <div class="resultado">
+                <div id="conteudo">
+                    <p class="nivelc">Texto do primeiro parágrafo, blá...blá..</p>
+                    <p>Texto do segundo parágrafo, blá...blá...</p>
+                </div>
+                <p>Texto do terceiro parágrafo, blá...blá...</p>
+            </div>
+            <hr>
+            <p><strong>A declaração com uso de !important faz com que aquela propriedade tenha prioridade sobre todos as
+                    demais propriedades de outros seletores iguais, independentemente da especificidade e do efeito
+                    cascata.</strong></p>
+            <hr>
+            <p>p {<br>
+                color: red !important;<br>
+                font-size: 26px;<br>
+                }
+            </p>
+            <b>Caso haja conflito, vale o efeito cascata e a especificidade.<br>
+                Caso haja conflito entre a definição do desenvolvedor e do usuário, vale a do usuário.</b>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

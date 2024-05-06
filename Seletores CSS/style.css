@@ -1,0 +1,118 @@
+#textoazul {
+    color: steelblue;
+}
+
+.black {
+    color: black;
+}
+
+.textovermelho {
+    color: tomato;
+}
+
+/*O estilo da tag "p" foi aplicado inline, para não conflitar com os soutros exemplos.*/
+
+#combinado ul li {
+    color: tomato;
+}
+
+#filho div>p {
+    color: steelblue;
+}
+
+#adjacente p+p {
+    color: tomato;
+}
+
+p[title=titulo] {
+    color: steelblue;
+}
+
+header h1 {
+    font-size: xx-large;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+span {
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a[href*="example"] {
+    color: tomato;
+}
+
+div.article:first-child {
+    font-style: italic;
+}
+
+#link-id {
+    color: green;
+}
+
+#visited-id:visited {
+    color: tomato;
+}
+
+.botao {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+.botao2 {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.botao:hover {
+    color: black;
+    background-color: white;
+}
+
+.botao2:active {
+    color: black;
+    background-color: white;
+}
+.textbar:focus {
+    color: rgb(39, 134, 125);
+    font-weight: bold;
+    }
+.firstline::first-line {
+    color: tomato;
+}
+.fl::first-letter {
+    color: tomato;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+span ul {
+    font-family: 'Inconsolata', monospace;
+    font-size: medium;   
+}
+
+#conteudo p.nivelc {
+    color: green; /* Cor verde */
+    }
+    #conteudo p {
+    color: blue; /* Cor azul */
+    font-size: 18px;
+    }
+    .resultado p {
+    color: red; /* Cor vermelha */
+    font-size: 26px;
+    }
+    .linkneutro li a {
+        color: rgb(35, 119, 111);
+    }
+    .linkneutro li a:visited {
+        color: rgb(35, 119, 111);
+    }
